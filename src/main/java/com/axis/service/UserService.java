@@ -22,8 +22,8 @@ public class UserService {
 		return repo.findAll();
 	}
 	
-	public User deleteUser(User user) {
-		return repo.delete(user);
+	public void deleteUser(User user) {
+		repo.delete(user);
 	}
 
 }
